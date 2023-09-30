@@ -1,3 +1,54 @@
-h1 {
-    color: red;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.page-header {
+
+}
+
+.content {
+    max-width: 847.5px;
+    margin: auto;
+}
+
+.header-inner {
+    width: 100%;
+    height: 23vw;
+    max-height: 94px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 28vw;
+    max-width: 160px;
+    /* top: 3rem; */
+    left: -1.4rem;
+}
+
+.logo-image {
+    width: 100%;
+}
+
+
+.shime-saba-text {
+    width: 50%;
+    margin-left: 50%;
+}
+.shime-saba {
+    width: 50%;
+    margin-right: 50%;
+    margin-top: -250px;
+}
+
+.yaki-saba-text {
+    width: 50%;
+    margin-left: 50%;
+}
+.yaki-saba {
+    width: 50%;
+    margin-right: 50%;
+    margin-top: -250px;
 }
