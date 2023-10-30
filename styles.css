@@ -1,54 +1,101 @@
+@font-face {
+  font-family: "KouzanMouhitu";
+  src: url("./fonts/KouzanMouhituFontOTF.otf") format("opentype");
+}
 body {
-    padding: 0;
-    margin: 0;
-    background-color: black;
+  padding: 0;
+  margin: 0;
+  background-image: url("./images/japanese-paper_00147.jpg");
+  font-family: "KouzanMouhitu", sans-serif;
+}
+@media screen and (min-width: 1140px) {
+  body {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 594px) and (max-width: 1140px) {
+  body {
+    padding-top: 64px;
+  }
+}
+@media screen and (max-width: 594px) {
+  body {
+    padding-top: 48px;
+  }
 }
 
-.page-header {
-
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+@media screen and (min-width: 1140px) {
+  .header {
+    height: 64px;
+  }
+}
+@media screen and (min-width: 594px) and (max-width: 1140px) {
+  .header {
+    height: 64px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .header {
+    height: 48px;
+  }
 }
 
-.content {
-    max-width: 847.5px;
-    margin: auto;
+.contents {
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 100%;
+}
+@media screen and (min-width: 1140px) {
+  .contents {
+    padding: 0 70px;
+  }
+}
+@media screen and (min-width: 594px) and (max-width: 1140px) {
+  .contents {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .contents {
+    padding: 0 12px;
+  }
 }
 
-.header-inner {
-    width: 100%;
-    height: 23vw;
-    max-height: 94px;
-    position: relative;
+.button-container {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
-.logo {
-    position: absolute;
-    width: 28vw;
-    max-width: 160px;
-    /* top: 3rem; */
-    left: -1.4rem;
+.header-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "KouzanMouhitu", sans-serif;
+  padding-left: 16px;
+}
+.header-button:hover {
+  color: #6b5b3d;
 }
 
-.logo-image {
-    width: 100%;
-}
-
-
-.shime-saba-text {
-    width: 50%;
-    margin-left: 50%;
-}
 .shime-saba {
-    width: 50%;
-    margin-right: 50%;
-    margin-top: -250px;
+  width: 50%;
 }
 
-.yaki-saba-text {
-    width: 50%;
-    margin-left: 50%;
-}
 .yaki-saba {
-    width: 50%;
-    margin-right: 50%;
-    margin-top: -250px;
-}
+  width: 50%;
+}/*# sourceMappingURL=styles.css.map */
