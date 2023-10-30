@@ -1,35 +1,16 @@
-@font-face {
-  font-family: "KouzanMouhitu";
-  src: url("../../fonts/KouzanMouhituFontOTF.otf") format("opentype");
-}
 body {
   padding: 0;
   margin: 0;
   background-image: url("../../images/japanese-paper_00147.jpg");
-  font-family: "KouzanMouhitu", sans-serif;
-}
-@media screen and (min-width: 1140px) {
-  body {
-    padding-top: 64px;
-  }
-}
-@media screen and (min-width: 594px) and (max-width: 1140px) {
-  body {
-    padding-top: 64px;
-  }
-}
-@media screen and (max-width: 594px) {
-  body {
-    padding-top: 48px;
-  }
+  font-family: "shinryu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
-  z-index: 100;
 }
 @media screen and (min-width: 1140px) {
   .header {
@@ -85,9 +66,17 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-family: "KouzanMouhitu", sans-serif;
+  font-family: "shinryu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-left: 16px;
 }
-.header-button:hover {
+.header-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header-button a:hover {
   color: #6b5b3d;
 }/*# sourceMappingURL=toEventHost.css.map */
