@@ -90,4 +90,10 @@ body {
 }
 .header-button:hover {
   color: #6b5b3d;
+}
+
+.calendar {
+  width: 100%;
+  height: 75vw;
+  max-height: 1080px;
 }/*# sourceMappingURL=schedule.css.map */
