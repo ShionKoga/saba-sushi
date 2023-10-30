@@ -1,0 +1,90 @@
+@import "../styleComponents/MediaQueries";
+@font-face {
+    font-family: "KouzanMouhitu";
+    src: url("../../fonts/KouzanMouhituFontOTF.otf") format("opentype");
+}
+
+$header-height-large: 64px;
+$header-height-medium: 64px;
+$header-height-small: 48px;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../../images/japanese-paper_00147.jpg");
+    font-family: "KouzanMouhitu", sans-serif;
+
+    @include large {
+        padding-top: $header-height-large;
+    }
+    
+    @include medium {
+        padding-top: $header-height-medium;
+    }
+    
+    @include small {
+        padding-top: $header-height-small;
+    }
+}
+
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+  
+    @include large {
+        height: $header-height-large;
+    }
+  
+    @include medium {
+        height: $header-height-medium;
+    }
+  
+    @include small {
+        height: $header-height-small;
+    }
+}
+
+.contents {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100%;
+  
+    @include large {
+        padding: 0 70px;
+    }
+  
+    @include medium {
+        padding: 0 40px;
+    }
+  
+    @include small {
+        padding: 0 12px;
+    }
+}
+
+.button-container {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-family: "KouzanMouhitu", sans-serif;
+    padding-left: 16px;
+
+    &:hover {
+        color: #6b5b3d;
+    }
+}

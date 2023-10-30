@@ -1,7 +1,7 @@
-@import "./MediaQueries";
+@import "../styleComponents/MediaQueries";
 @font-face {
     font-family: "KouzanMouhitu";
-    src: url("./fonts/KouzanMouhituFontOTF.otf") format("opentype");
+    src: url("../../fonts/KouzanMouhituFontOTF.otf") format("opentype");
 }
 
 $header-height-large: 64px;
@@ -11,7 +11,7 @@ $header-height-small: 48px;
 body {
     padding: 0;
     margin: 0;
-    background-image: url("./images/japanese-paper_00147.jpg");
+    background-image: url("../../images/japanese-paper_00147.jpg");
     font-family: "KouzanMouhitu", sans-serif;
 
     @include large {
