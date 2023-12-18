@@ -31,14 +31,13 @@ body {
     }
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
+.bg-black {
+    padding-top: 16px;
     background-color: black;
-    .home-image {
-        width: 100%;
-        max-width: 1440px;
-    }
+    color: white;
+}
+.home-image {
+    width: 100%;
 }
 
 
@@ -173,4 +172,44 @@ body {
 .divider {
     height: 0;
     border: black 1px solid;
+}
+
+
+.semi-footer-bg {
+    padding: 16px 0;
+    background-image: url("../../images/semi-footer-bg.jpg");
+
+    p, h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .line-image-container {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}
+
+.footer-bg {
+    padding: 16px 0;
+    background-image: url("../../images/footer-bg.jpg");
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .sns-links {
+        display: flex;
+        gap: 8px;
+        img {
+            width: 30px;
+        }
+    }
 }
