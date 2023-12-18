@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./home.css" />
     <title>Document</title>
-    <script>
-        (function(d) {
-            var config = {
-                kitId: 'ltu7fqc',
-                scriptTimeout: 3000,
-                async: true
-            },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
 </head>
 <body>
     <header class="header">
-        <div class="contents">
+        <div class="contents header-contents">
+            <img src="../../images/なごみロゴ 64.png" alt="ロゴ">
             <div class="button-container">
                 <button class="header-button">
                     <a href="../home/home.html">ホーム</a>
@@ -39,29 +30,55 @@
         <img class="home-image" src="../../images/header-image.png" alt="image">
     </div>
 
-    <img src="../../images/和のこだわり.png" alt="和のこだわり">
+    <img class="section-image" src="../../images/和のこだわり.png" alt="和のこだわり">
     <div class="contents">
-        <img src="../../images/こだわり.png" alt="こだわり">
-        <p>弊社が取り扱っている鯖寿司は、鯖街道起点の福井小浜市にある「田村長源兵衛」が製造しております。</p>
-        <p>長年鯖寿司の製造製造を任されていた経験と技術を活かし、全国の方に「うまい！」と言って頂ける焼き鯖寿司を作っております。</p>
-        <p>厳選した材料を使い、全て寿司職人が一つ一つ手作業で製造しています。おいしい押し寿司をお楽しみください。</p>
-        <p>絶品の鯖寿司を名古屋、三河方面を中心に催事販売を行っております！マルシェや弘法市などのイベントにも数多く出店しております！</p>
+        <div class="rectangle-left">
+            <img class="rectangle" src="../../images/こだわり.png" alt="こだわり">
+        </div>
+        <div class="rectangle-right">
+            <div class="rectangle card send-to-back">
+                <div class="spacer-300"></div>
+                <p>弊社が取り扱っている鯖寿司は、鯖街道起点の福井小浜市にある「田村長源兵衛」が製造しております。</p>
+                <p>長年鯖寿司の製造製造を任されていた経験と技術を活かし、全国の方に「うまい！」と言って頂ける焼き鯖寿司を作っております。</p>
+                <p>厳選した材料を使い、全て寿司職人が一つ一つ手作業で製造しています。おいしい押し寿司をお楽しみください。</p>
+                <p>絶品の鯖寿司を名古屋、三河方面を中心に催事販売を行っております！マルシェや弘法市などのイベントにも数多く出店しております！</p>
+            </div>
+        </div>
     </div>
-    <img src="../../images/商品紹介.png" alt="商品紹介">
+
+    <img class="section-image" src="../../images/商品紹介.png" alt="商品紹介">
     <div class="contents">
-        <h2>しめ鯖寿司</h2>
-        <p>肉厚のある厳選した国産の真鯖を使用。酢飯と肉厚のある真鯖との間には口当たりの良いさっぱりとした甘酢生姜を挟み全体をこだわりのおぼろ昆布で巻いた、酢鯖と酢飯とおぼろ昆布の絶妙なコンビネーション</p>
-        <img class="shime-saba" src="../../images/shime-saba.JPG" alt="しめ鯖寿司">
+        <div class="card card-flex mt-16">
+            <img class="card-thumbnail" src="../../images/shime-saba.JPG" alt="しめ鯖寿司">
+            <div class="card-content">
+                <h2 class="card-title">しめ鯖寿司</h2>
+                <p>肉厚のある厳選した国産の真鯖を使用。酢飯と肉厚のある真鯖との間には口当たりの良いさっぱりとした甘酢生姜を挟み全体をこだわりのおぼろ昆布で巻いた、酢鯖と酢飯とおぼろ昆布の絶妙なコンビネーション</p>
+            </div>
+        </div>
 
-        <h2>焼き鯖寿司</h2>
-        <p>肉厚で脂ののった鯖を秘伝のタレにじっくり漬け込みしっとりこんがり職人の技で焼き上げゴマを混ぜ込んだ香ばしい酢飯に甘酢生姜と味付け椎茸を挟んだ福井の味</p>
-        <img class="yaki-saba" src="../../images/yaki-saba.JPG" alt="焼き鯖寿司">
+        <div class="card card-flex mt-16">
+            <img class="card-thumbnail" src="../../images/yaki-saba.JPG" alt="焼き鯖寿司">
+            <div class="card-content">
+                <h2 class="card-title">焼き鯖寿司</h2>
+                <p>肉厚で脂ののった鯖を秘伝のタレにじっくり漬け込みしっとりこんがり職人の技で焼き上げゴマを混ぜ込んだ香ばしい酢飯に甘酢生姜と味付け椎茸を挟んだ福井の味</p>
+            </div>
+        </div>
 
-        <h2>味噌焼き鯖寿司（八丁味噌）</h2>
-        <img class="yaki-saba" src="../../images/misoyaki-saba.JPG" alt="味噌焼き鯖寿司（八丁味噌）">
-
-        <h2>味噌焼き鯖寿司（西京味噌）</h2>
-        <img class="yaki-saba" src="../../images/saikyo-misoyaki-saba.JPG" alt="味噌焼き鯖寿司（西京味噌）">
+        <div class="card card-flex mt-16">
+            <img class="card-thumbnail" src="../../images/misoyaki-saba.JPG" alt="味噌焼き鯖寿司（八丁味噌）">
+            <div class="card-content">
+                <h2 class="card-title">味噌焼き鯖寿司（八丁味噌）</h2>
+                <p>ここに説明が入ります</p>
+            </div>
+        </div>
+        
+        <div class="card card-flex mt-16">
+            <img class="card-thumbnail" src="../../images/saikyo-misoyaki-saba.JPG" alt="味噌焼き鯖寿司（西京味噌）">
+            <div class="card-content">
+                <h2 class="card-title">味噌焼き鯖寿司（西京味噌）</h2>
+                <p>ここに説明が入ります</p>
+            </div>
+        </div>
 
         <h2>京のいなり寿司</h2>
         <h2>柿の葉寿司</h2>
@@ -70,9 +87,9 @@
         <h2>田村長だし</h2>
     </div>
 
-    <img src="../../images/出店場所.png" alt="商品紹介">
+    <img class="section-image" src="../../images/出店場所.png" alt="商品紹介">
     <div class="contents">
-        <div class="font-sans">
+        <div>
             <h1>会社概要</h1>
             <p>株式会社和 nagomi</p>
             <p>代表取締役　藤原 義光</p>
